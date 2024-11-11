@@ -1,0 +1,101 @@
+modelo,marca,nombre,modelo_carro,year_carro,precio,existencias
+Commander,Jeep,Correa de distribucion,Celica,2008,2778,16
+Caravan,Dodge,Conector de carga,Sierra 3500,1992,2675,18
+3500,Ram,Modulo de control electrico,GT,2011,412,19
+Yukon XL 1500,GMC,Bomba de combustible,Swift,2005,217,14
+riolet,Audi,Cuerpo de aceleracion,XK Series,1994,1154,19
+Durango,Dodge,Faros,Sprinter,2011,473,3
+Passport,Honda,Bateria de litio,Sedona,2000,2042,7
+Rapide,Aston Martin,Enfriador de bateria,GS,2010,1199,18
+Precis,Mitsubishi,Aceite de motor,XJ Series,1994,2034,24
+Torrent,Pontiac,Filtro de aceite,Dakota,2008,1716,18
+Park Avenue,Buick,Filtro de particulas diesel,Avalon,2004,2282,22
+Silverado 3500,Chevrolet,Bateria de litio,Firebird,2005,2023,25
+RDX,Acura,Aceite de motor,Sequoia,2012,343,18
+Fit,Honda,Conector de carga,Cooper,2007,1021,8
+Ram 3500 Club,Dodge,Turbocompresor,ES,1996,1536,7
+Taurus X,Ford,Cargador electrico,Edge,2008,382,21
+V90,Volvo,Sistema de escape,Capri,1997,1469,16
+Sierra 2500,GMC,Cargador electrico,Kizashi,2003,2706,18
+Tempo,Ford,Convertidor de corriente,E250,1987,2677,15
+Arnage,Bentley,Bateria de litio,Pilot,2007,1268,24
+HHR,Chevrolet,Bomba de combustible,B-Series,2006,237,5
+XJ,Jaguar,Conector de carga,Navigator,2011,1604,4
+Odyssey,Honda,Convertidor de corriente,Cruze,2009,1932,23
+Alcyone SVX,Subaru,Inyectores de diesel,T100,1997,2842,21
+S-Type,Jaguar,Convertidor de corriente,Suburban 1500,2000,1149,11
+GTO,Pontiac,Radiador,Suburban 2500,1971,1539,13
+599 GTB Fiorano,Ferrari,Sistema de escape,Charger,2009,322,21
+Windstar,Ford,Inyectores de diesel,Shadow,2000,433,24
+Brooklands,Bentley,Radiador,F350,2010,2652,7
+G8,Pontiac,Inyectores de diesel,E250,2009,1815,13
+MKX,Lincoln,Espejo retrovisor,E-Series,2007,1600,4
+3000GT,Mitsubishi,Filtro de particulas diesel,Savana 2500,1993,1683,11
+5 Series,BMW,Faros,Legacy,1992,1193,19
+Continental Flying Spur,Bentley,Alternador,Club Wagon,2009,223,8
+Azure,Bentley,Convertidor de corriente,Impala,2008,2401,17
+Esprit,Lotus,Conector de carga,Esteem,2002,1885,13
+Cougar,Mercury,Filtro de particulas diesel,F250,1999,2172,16
+IS F,Lexus,Enfriador de bateria,CL65 AMG,2009,1151,21
+Swift,Suzuki,Cuerpo de aceleracion,Accord,1993,2252,9
+Axiom,Isuzu,Turbocompresor,FX,2002,2502,3
+R-Class,Mercedes-Benz,Filtro de particulas electricas,Type 2,2009,420,8
+EXP,Ford,Convertidor catalitico,F450,1986,698,22
+Expedition,Ford,Espejo retrovisor,Fusion,2008,2949,17
+Eclipse,Mitsubishi,Bujia,626,2011,2935,17
+626,Mazda,Radiador,Pajero,1988,1346,3
+LTD Crown Victoria,Ford,Cargador electrico,Odyssey,1989,2319,20
+928,Porsche,Alternador,Club Wagon,1990,2015,23
+Miata MX-5,Mazda,Cuerpo de aceleracion,Typ-1,2000,2903,9
+Impreza,Subaru,Pastillas de freno,Windstar,2000,728,18
+Regal,Buick,Filtro de aire,Rally Wagon G3500,2003,627,15
+Ram 50,Dodge,Filtro de particulas electricas,SL-Class,1993,908,18
+Aura,Saturn,Inyectores de diesel,Express,2009,2648,8
+Suburban 1500,Chevrolet,Modulo de control electrico,Mazda6,1996,2263,12
+X6 M,BMW,Inyectores de diesel,Sephia,2011,1397,19
+E150,Ford,Convertidor de corriente,Range Rover,2012,2276,11
+Trooper,Isuzu,Correa de distribucion,Mariner,1992,707,18
+Eldorado,Cadillac,Cargador electrico,Pajero,1992,821,7
+Bronco,Ford,Convertidor de corriente,RS 6,1988,1294,14
+Bronco II,Ford,Conector de carga,CR-Z,1990,994,11
+Impreza,Subaru,Filtro de particulas electricas,GTI,2011,975,8
+RX,Lexus,Motor electrico,100,2013,2069,21
+Vantage,Aston Martin,Inyectores de diesel,Landaulet,2008,1281,6
+Sienna,Toyota,Bomba de combustible,Avalon,2002,2404,5
+Express 1500,Chevrolet,Modulo de control electrico,9-3,2003,484,25
+S-Series,Saturn,Faros,Tundra,1992,1183,14
+SJ,Suzuki,Bomba de combustible,Rally Wagon 3500,1993,1536,3
+RL,Acura,Faros,Cherokee,2001,1371,19
+Escort,Ford,Filtro de particulas electricas,Sonata,2000,2890,10
+Rogue,Nissan,Filtro de aceite,E350,2009,2800,22
+TundraMax,Toyota,Filtro de particulas diesel,Club Wagon,2012,2032,7
+DB9 Volante,Aston Martin,Filtro de particulas diesel,RS6,2006,1827,3
+GX,Lexus,Cargador electrico,QX,2003,1508,19
+Aveo,Chevrolet,Bateria de litio,Regal,2006,830,16
+Elantra,Hyundai,Cargador electrico,Swift,2012,2448,13
+MINI,MINI,Cuerpo de aceleracion,C/V,2002,2716,21
+Grand Vitara,Suzuki,Motor electrico,Ion,2002,1122,3
+C8 Spyder Wide Body,Spyker,Modulo de control electrico,SL-Class,2004,2434,22
+Grand Marquis,Mercury,Radiador,Allante,1997,443,13
+Escape,Ford,Filtro de particulas diesel,Freelander,2008,1407,9
+Quest,Nissan,Modulo de control electrico,Grand Prix,2002,1870,7
+Sierra 1500,GMC,Inyectores de diesel,I,2005,346,11
+Turbo Firefly,Pontiac,Radiador,Corvette,1990,762,4
+Grand Voyager,Plymouth,Filtro de aceite,TT,1998,510,3
+Forester,Subaru,Espejo retrovisor,Firebird Formula,2011,2159,5
+Grand Cherokee,Jeep,Bomba de combustible,Alcyone SVX,1998,2049,8
+Relay,Saturn,Amortiguador,Tacoma,2007,1875,21
+Envoy XL,GMC,Bujia,Galant,2005,2928,20
+XC70,Volvo,Bateria de arranque,Mirage,2004,1958,24
+Navigator,Lincoln,Filtro de particulas diesel,Gallardo,1999,2089,8
+7 Series,BMW,Pastillas de freno,Crown Victoria,2004,2967,4
+Thunderbird,Ford,Sistema de escape,JUKE,2003,1215,4
+Laser,Plymouth,Bateria de arranque,Ascender,1992,1965,6
+X-Type,Jaguar,Bateria de litio,Prizm,2005,2861,12
+Alcyone SVX,Subaru,Convertidor catalitico,Ram 3500 Club,1994,2835,22
+GTI,Volkswagen,Faros,G-Series 2500,2004,2813,14
+Mustang,Ford,Motor electrico,Wrangler,2013,701,18
+C-Class,Mercedes-Benz,Enfriador de bateria,928,2008,1785,21
+Talon,Eagle,Aceite de motor,Villager,1992,2641,16
+Sierra 2500,GMC,Pastillas de freno,Ram 3500,2006,2206,21
+S10,Chevrolet,Faros,CTS,1993,2792,22
