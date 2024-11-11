@@ -1,4 +1,4 @@
-modelo,marca,placa,color,año,kilometraje,rentado,motor,precio_renta,ced_cliente,fecha_de_entrega
+modelo,marca,placa,color,year,kilometraje,rentado,motor,precio_renta,ced_cliente,fecha_de_entrega
 LeSabre,Buick,NCV771,Pink,1990,36998,Si,3.0,35,6427230321,24/02/2024
 Liberty,Jeep,WVV349,Puce,2006,55296,No,2.4,31,5485256090,07/07/2024
 Sierra 3500,GMC,EXJ173,Red,2007,45987,No,2.6,46,5654489433,16/04/2024
