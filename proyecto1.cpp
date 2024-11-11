@@ -215,7 +215,7 @@ void cargarC(Cliente c[], int &cantidadC) {
             continue;
         }   
     
-  getline(ss, cli.nombre, ',');
+        getline(ss, cli.nombre, ',');
         getline(ss, cli.apellido, ',');
         getline(ss, cli.email, ',');
 
@@ -237,4 +237,45 @@ void cargarC(Cliente c[], int &cantidadC) {
 
     archivoTexto.close();
     cout << "Datos cargados desde el archivo cvs." << endl;
+}
+int main (){
+  Vehiculos vehiculos[maxv];
+  int cantidadv=0;
+
+  CV(vehiculos, cantidadv);
+  for (int i = 0; i < cantidadv; ++i) { 
+    const Vehiculos &vehi = vehiculos[i];
+    cout<< "Modelo: "<<vehi.modelo<< ", Marca: "<<vehi.marca
+        <<", placa: "<<vehi.placa<< ", Color: "<< vehi.color
+        <<", year: "<<vehi.year << ", kilometraje: "<<vehi.kilometraje
+        <<", Rentado: "<< vehi.year << ", motor: "<<vehi.motor
+        <<", precio renta: "<<vehi.precio_renta
+        <<", Cedula Cliente: "<<vehi.ced_cliente
+        <<", Fecha rentado: "<<vehi.fecha_rentado.dia<<"/"
+        <<vehi.fecha_rentado.mes<<"/"<<vehi.fecha_rentado.year<<endl;
+    }
+     Cliente c[maxcli];
+    int cantidadC = 0;
+    cargarC(c, cantidadC);
+   
+    for (int i = 0; i < cantidadC; ++i) {
+        const Cliente &cli = c[i];
+        cout << "CI: " << cli.ci << ", Nombre: " << cli.nombre 
+             << ", Apellido: " << cli.apellido << ", Email: " << cli.email 
+             << ", Cantidad Vehiculos Rentados: " << cli.cantidad_de_vehiculos_rentados 
+             << ", Direccion: " << cli.direccion 
+             << ", Activo: " << cli.activo << endl;
+    }
+        Repuestos r[maxr];
+    int cantidadR = 0;
+    cargarR(r, cantidadR);
+    for (int i = 0; i < cantidadR; ++i) {
+        const Repuestos &repuesto = r[i];
+        cout << "Modelo: " << repuesto.modelo << ", Marca: " << repuesto.marca 
+             << ", Nombre: " << repuesto.nombre << ", Modelo Carro: " << repuesto.modelo_carro 
+             << ", year Carro: " << repuesto.year_carro << ", Precio: " << repuesto.precio 
+             << ", Existencias: " << repuesto.existencias << endl;
+    }
+  cout<< "si se leyo correctamente"<<endl;
+  return 0;
 }
