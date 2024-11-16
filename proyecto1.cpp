@@ -62,7 +62,7 @@ const int maxv = 200;
 
   int cantidadv = 0; 
   int cantidadC = 0;
-   int cantidadR = 0;//preferi unir esto para poder ver los errores mas facilmente
+  int cantidadR = 0;
 
 void CV(Vehiculos vehiculos[], int &cantidadv) {
     const string ArchivoTexto = "vehiculos.csv";
@@ -290,7 +290,7 @@ void insertarVehiculo() {
         cin >> vehi.year;
         cout << "Ingrese kilometraje: ";
         cin >> vehi.kilometraje;
-        cout << "Está rentado? (si/no): ";
+        cout << "Esta rentado? (si/no): ";
         cin >> vehi.rentado;
         cout << "Ingrese motor: ";
         cin >> vehi.motor;
@@ -304,7 +304,7 @@ void insertarVehiculo() {
         vehiculos[cantidadv++] = vehi;
         cout << "Vehiculo insertado correctamente." << endl;
     } else {
-        cout << "No hay espacio para mas vehículos." << endl;
+        cout << "No hay espacio para mas vehiculos." << endl;
     }
     guardarVehiculos();
 }
@@ -324,7 +324,7 @@ void insertarCliente() {
         cin >> cli.cantidad_de_vehiculos_rentados;
         cout << "Ingrese direccion: ";
         cin >> cli.direccion;
-        cout << "Está activo? (si/no): ";
+        cout << "Esta activo? (si/no): ";
         cin >> cli.activo;
 
         clientes[cantidadC++] = cli;
@@ -365,7 +365,7 @@ string normalizarPlaca(string placa) {
  transform(placa.begin(), placa.end(), placa.begin(), ::toupper); return placa; }
 
 void modificarVehiculo(Vehiculos vehiculos[], int cantidadv) {
-     string placa; cout << "Ingrese la placa del vehículo a modificar: ";
+     string placa; cout << "Ingrese la placa del vehiculo a modificar: ";
       cin >> placa; placa = normalizarPlaca(placa); 
      bool encontrado = false; for (int i = 0; i < cantidadv; i++) 
      { string placaVehiculo = normalizarPlaca(vehiculos[i].placa); 
@@ -385,7 +385,7 @@ void modificarVehiculo(Vehiculos vehiculos[], int cantidadv) {
      cin >> vehiculos[i].ced_cliente;
      cout << "Vehículo modificado correctamente." << endl; 
     break; }
-    } if (!encontrado) { cout << "No se encontró el vehículo con esa placa." << endl; }
+    } if (!encontrado) { cout << "No se encontro el vehiculo con esa placa." << endl; }
        guardarVehiculos();}
 
 void modificarCliente() {
@@ -530,7 +530,88 @@ void eliminarCliente() {
     }
     guardarRepuestos();
 }
+void consultarVehiculo() {
+    string placa;
+    cout << "Ingrese la placa del vehiculo a consultar: ";
+    cin >> placa;
+    placa = normalizarPlaca(placa);
 
+    bool encontrado = false;
+    for (int i = 0; i < cantidadv; i++) {
+        string placaVehiculo = normalizarPlaca(vehiculos[i].placa);
+        if (placaVehiculo == placa) {
+            encontrado = true;
+            cout << "Datos del vehiculo:\n";
+            cout << "Modelo: " << vehiculos[i].modelo << "\n";
+            cout << "Marca: " << vehiculos[i].marca << "\n";
+            cout << "Placa: " << vehiculos[i].placa << "\n";
+            cout << "Color: " << vehiculos[i].color << "\n";
+            cout << "Year: " << vehiculos[i].year << "\n";
+            cout << "Kilometraje: " << vehiculos[i].kilometraje << "\n";
+            cout << "Rentado: " << vehiculos[i].rentado << "\n";
+            cout << "Motor: " << vehiculos[i].motor << "\n";
+            cout << "Precio renta: " << vehiculos[i].precio_renta << "\n";
+            cout << "Cedula Cliente: " << vehiculos[i].ced_cliente << "\n";
+            cout << "Fecha de entrega: " << vehiculos[i].fecha_rentado.dia << "/"
+                 << vehiculos[i].fecha_rentado.mes << "/" << vehiculos[i].fecha_rentado.year << "\n";
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        cout << "No se encontro el vehiculo con esa placa." << endl;
+    }
+}
+void consultarCliente() {
+    int ci;
+    cout << "Ingrese la cedula del cliente a consultar: ";
+    cin >> ci;
+
+    bool encontrado = false;
+    for (int i = 0; i < cantidadC; i++) {
+        if (clientes[i].ci == ci) {
+            encontrado = true;
+            cout << "Datos del cliente:\n";
+            cout << "Cedula: " << clientes[i].ci << "\n";
+            cout << "Nombre: " << clientes[i].nombre << "\n";
+            cout << "Apellido: " << clientes[i].apellido << "\n";
+            cout << "Email: " << clientes[i].email << "\n";
+            cout << "Cantidad de vehiculos rentados: " << clientes[i].cantidad_de_vehiculos_rentados << "\n";
+            cout << "Direccion: " << clientes[i].direccion << "\n";
+            cout << "Activo: " << clientes[i].activo << "\n";
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        cout << "No se encontro el cliente con esa cedula." << endl;
+    }
+}
+void consultarRepuesto() {
+    string modelo;
+    cout << "Ingrese el modelo del repuesto a consultar: ";
+    cin >> modelo;
+
+    bool encontrado = false;
+    for (int i = 0; i < cantidadR; i++) {
+        if (repuestos[i].modelo == modelo) {
+            encontrado = true;
+            cout << "Datos del repuesto:\n";
+            cout << "Modelo: " << repuestos[i].modelo << "\n";
+            cout << "Marca: " << repuestos[i].marca << "\n";
+            cout << "Nombre: " << repuestos[i].nombre << "\n";
+            cout << "Modelo del carro: " << repuestos[i].modelo_carro << "\n";
+            cout << "Year del carro: " << repuestos[i].year_carro << "\n";
+            cout << "Precio: " << repuestos[i].precio << "\n";
+            cout << "Existencias: " << repuestos[i].existencias << "\n";
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        cout << "No se encontro el repuesto con ese modelo." << endl;
+    }
+}
 void gestionarAccion(int archivoSeleccionado) {
     int opcion;
     do {
@@ -539,6 +620,7 @@ void gestionarAccion(int archivoSeleccionado) {
         cout << "2. Insertar datos\n";
         cout << "3. Modificar datos\n";
         cout << "4. Eliminar datos\n";
+        cout << "5. consultar datos\n";
         cout << "5. Volver al menu principal\n";
         cout << "Opcion: ";
         cin >> opcion;
@@ -595,13 +677,16 @@ void gestionarAccion(int archivoSeleccionado) {
                 else if (archivoSeleccionado == 2) eliminarCliente();
                 else if (archivoSeleccionado == 3) eliminarRepuesto();
                 break;
-            case 5:
+            case 5: 
+                if (archivoSeleccionado == 1) consultarVehiculo();
+                else if (archivoSeleccionado == 2) consultarCliente();
+                else if (archivoSeleccionado == 3) consultarRepuesto();
                 break;
-            default:
-                cout << "Opcion invalida\n";
-        }
-    } while (opcion != 5);
-}
+            case 6: break; 
+                default: cout << "Opcion invalida\n"; } 
+                } while (opcion != 6); }
+  
+
 
 void mostrarMenuPrincipal() {
     cout << "\nSeleccione el archivo que desea modificar:\n";
